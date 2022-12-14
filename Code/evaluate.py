@@ -2,27 +2,17 @@
 # ------------------------------------------------------------------------------------------------------------------
 import time
 
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MultiLabelBinarizer
-import cv2
-import pandas as pd
-from sklearn.metrics import accuracy_score, f1_score, hamming_loss, cohen_kappa_score, matthews_corrcoef, \
-    classification_report
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
-from torch.utils import data
+from sklearn.metrics import classification_report
+from sklearn.preprocessing import MultiLabelBinarizer
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-from torchvision import transforms
 from torchvision import models
-import torch.nn.functional as F
-from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from tqdm import tqdm
-import os
-import seaborn as sns
-from matplotlib import pyplot as plt
 
 from metric import metrics_func
+
 # from train import model_definition
 
 n_epoch = 40
