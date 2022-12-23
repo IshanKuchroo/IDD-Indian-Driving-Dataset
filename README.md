@@ -13,22 +13,6 @@ http://idd.insaan.iiit.ac.in/dataset/details/
 Splits:
 The dataset of 9860 images has been split into train, validation and test sets with each set having 6,991, 1912 and 957 images, respectively.
 
-
-# HOW TO DOWNLOAD DATA
-
-1. pip install gdown
-
-2. Go to the main folder - "IDD-Indian-Driving-Dataset", on the terminal, and execute following statements:
-
-gdown --no-check-certificate https://drive.google.com/uc?id=1XOmsdCH9OAo2klfQ0o8D6tbPRxBWa4wV -O 'Data.zip'
-
-3. Unzip files as follows:
-
-unzip Data.zip
-
-This will create a folder on your terminal named "Data".
-
-
 # HOW TO RUN:
 
 1. Please check Requirements.txt file to see additional packages that need to be installed.
